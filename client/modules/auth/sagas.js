@@ -4,9 +4,7 @@ import { delay } from 'redux-saga';
 import * as actions from './actions';
 import * as api from './api';
 
-import {
-  USER_LOGIN_REQUEST,
-} from './constants';
+import { USER_LOGIN_REQUEST } from './constants';
 
 /**
  *  requestLogin
