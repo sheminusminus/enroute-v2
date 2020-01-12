@@ -8,9 +8,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 const DIST_FOLDER = path.join(__dirname, 'public');
-const SRC_FOLDER = path.join(__dirname, 'client');
+const SRC_FOLDER = path.join(__dirname, 'src');
 
 const config = require('./webpack.config.base');
+
+config.mode = 'development';
 
 config.entry = [
   'react-hot-loader/patch',
@@ -46,7 +48,7 @@ config.plugins = [
   new webpack.NamedModulesPlugin(),
   new HtmlWebpackPlugin({ // also generate an index.html
     filename: 'index.html',
-    template: 'client/static/html/index.ejs',
+    template: 'src/static/html/index.ejs',
   }),
 ];
 

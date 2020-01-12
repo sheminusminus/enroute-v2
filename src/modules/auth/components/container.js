@@ -5,7 +5,7 @@ import { requestLogin } from '../actions';
 
 import presenter from './presenter';
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   isAuthenticated: selectors.selectIsAuthenticated(state),
   isFetching: selectors.selectIsFetching(state),
 });

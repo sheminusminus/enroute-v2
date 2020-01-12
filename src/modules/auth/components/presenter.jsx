@@ -46,7 +46,7 @@ class UserAuth extends React.Component {
     const { username, password } = this.state;
 
     if (isFetching) return <p>Bypassing security protocols...</p>;
-    else if (isAuthenticated) return <p>Welcome!</p>;
+    if (isAuthenticated) return <p>Welcome!</p>;
 
     return (
       <form onSubmit={this.handleSubmit}>

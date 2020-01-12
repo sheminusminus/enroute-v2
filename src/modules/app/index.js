@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import Routes from '../router/components';
 
-const App = props => (
+const App = (props) => (
   <Provider store={props.store}>
     <Router>
       <Routes />

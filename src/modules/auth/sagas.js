@@ -1,4 +1,6 @@
-import { call, fork, put, take } from 'redux-saga/effects';
+import {
+  call, fork, put, take,
+} from 'redux-saga/effects';
 import { delay } from 'redux-saga';
 
 import * as actions from './actions';
